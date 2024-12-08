@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug Solution</title>
+</head>
+<body>
+  <div id="myDiv">
+    This is some text.
+  </div>
+  <script>
+    // Using insertAdjacentHTML for efficient and reliable DOM manipulation
+    const myDiv = document.getElementById("myDiv");
+    const newParagraph = document.createElement('p');
+    newParagraph.textContent = 'Added Text';
+    myDiv.appendChild(newParagraph);
+
+    //Alternative using insertAdjacentHTML
+    //myDiv.insertAdjacentHTML('beforeend', '<p>Added text using insertAdjacentHTML</p>');
+  </script>
+</body>
+</html>
